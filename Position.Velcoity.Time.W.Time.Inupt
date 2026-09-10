@@ -1,0 +1,46 @@
+import math
+
+vo = float(input("What is the initial velocity vector? "))
+OoO = float(input("What is the angle between the velocity vector and the x-axis? "))
+
+ax = int(input("What is the acceleration in the x direction? "))
+xo = int(input("What is the initial position along the x-axis? "))
+
+ay = float(input("What is the acceleration in the y direction (gravity)? "))
+yo = float(input("What is the initial position along the y-axis? "))
+
+dt = float(input("What is the time step size (change in time)? "))
+t = 0
+
+# Convert angle to radians
+theta = math.radians(OoO)
+
+# Initial velocity components
+vxo = vo * math.cos(theta)
+x = xo
+
+vyo = vo * math.sin(theta)
+y = yo
+
+def position (x, vxo, ax, t):
+    x = xo + (vxo * t)
+    vx = vxo + (ax * t)
+    return x , vx
+
+def height (y, vyo, ay, t):
+    y = yo - (vyo * t)
+    vy = vyo + (ay * t)
+    return y , vy
+
+def time (t, dt):
+    t = t + dt
+    return t
+
+while y > 0.001:
+    t = time(t, dt)
+    x, vx = position(x, vxo, ax, t)
+    y, vy = height(y, vyo, ay, t)
+
+    print("t =", t)
+    print("x =", x, "vx =", vx)
+    print("y =", y, "vy =", vy)
