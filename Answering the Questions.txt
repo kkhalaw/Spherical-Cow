@@ -1,3 +1,5 @@
+Google Doc with same information: https://docs.google.com/document/d/1-9M4ijwi6_W2otPxX1ML6oCjbp4IEVILl2DJYy7wlWM/edit?usp=sharing 
+
 Is energy conserved as a function of time? To what level of precision?
     In the drag-free case energy was conserved as a function of time, but when drag was included energy was no longer concered.
     I don't know how to answer the second part of this question, sorry :( 
