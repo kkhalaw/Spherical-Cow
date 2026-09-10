@@ -1,0 +1,44 @@
+Is energy conserved as a function of time? To what level of precision?
+    In the drag-free case energy was conserved as a function of time, but when drag was included energy was no longer concered.
+    I don't know how to answer the second part of this question, sorry :( 
+
+How does the trajectory change if you change the time step? What about as you make the time step approach zero?
+    No, the trajectory does not change when the time step is changed.
+
+How does your trajectory compare to the analytic solution if you set air resistance to zero?
+  The trajectory graph produced by the code matches the graph produced via the analytic solution. 
+
+
+Drag-free case
+
+Assume initial conditions: vx = 1 m/s, vy = 100 m/s, drag = 0, x0 = 0, y0 = 1000.
+Use a time step of dt = 0.001.
+
+Write an output file that contains three space-separated columns:
+time, position_x, position_y
+
+Post the resulting file to Slack for your group.
+
+Plot the y vs. x position for the entire trajectory.
+On the same plot, work out and show the analytic prediction for the trajectory.
+Do they agree?
+  Yes.
+
+Plot the kinetic, potential, and total energy as a function of time.
+Is the total energy conserved?
+  Yes, in this case total energy is conserved.
+
+Repeat the previous two steps and compare the trajectory for different values of the step size (e.g. dt = .1, .01, .001, .0001, .00001).
+What pattern do you observe?
+    Everything looks the same to me in the graphs, I don't know if I'm doing it right. 
+
+Air resistance case
+
+Set the drag coefficient to 4.
+Are there conserved quantities? Are there any important limits?
+   The only conserved quantity is the drag force, in this case total energy is not conservered. 
+   Kinetic energy vs time might have a limit at a KE of 0. 
+
+Plot the new trajectory and post the corresponding trajectory file.
+
+
